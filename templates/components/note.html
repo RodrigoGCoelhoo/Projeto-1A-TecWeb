@@ -1,0 +1,16 @@
+<div class="card">
+  <form method="post">
+    <input type="hidden" name="acao" value="delete" />
+    <input type="hidden" name="id" id="hiddenField" value="{itemId}" />
+    <button class="btn-de btn-delete" type="submit"><img src="img/trash-can.png" class="delete" /></button>
+  </form> 
+  <div class="text-inputs">
+    <form method="post">
+      <input type="hidden" name="acao" value="edit" />
+      <input type="hidden" name="id" id="hiddenField" value="{itemId}" />
+      <textarea class="card-title textarea-input" name="novo_titulo">{title}</textarea>
+      <textarea class="textarea-input large-input" name="nova_desc">{details}</textarea>
+      <button class="btn-de btn-edit" type="submit"><img src="img/pencil.png" class="edit" /></button>
+    </form>
+  </div>
+</div>
