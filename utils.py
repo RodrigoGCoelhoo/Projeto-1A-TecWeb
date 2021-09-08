@@ -5,7 +5,7 @@ def extract_route(string):
 
 def read_file(path):
     strPath = str(path)
-    if strPath.split(".") == ["txt", "html", "css", "js"]:
+    if strPath.split(".") in ["txt", "html", "css", "js"]:
         with open(path, "r") as file:
             conteudo = file.read()
     else:
